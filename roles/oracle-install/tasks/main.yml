@@ -9,7 +9,7 @@
 # ==> Copy installer files
 - name: Copy installer files
   copy: src={{ item }} dest='{{ installation_folder }}/'
-  with_items: '{{ installer_archives }}'
+  with_items: '{{ installer_archive }}'
 
 # ==> extract files
 - name: Extract installation files
