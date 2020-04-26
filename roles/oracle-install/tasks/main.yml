@@ -30,7 +30,7 @@
   become_user: root
 
 # ==> execute DB home command as root
-- name: Execute DB home rfoot command
+ name: Execute DB home rfoot command
   command: '{{ oracle_home }}/root.sh'
   become_user: root
 
@@ -67,7 +67,7 @@
 
 - name: enable oradb script to run at startup
   command: 'chkconfig --add oradb'
-  become_user: root
+  become_user: roots
 
 
 
